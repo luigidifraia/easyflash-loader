@@ -1,7 +1,7 @@
 # Flexible EasyFlash Loader
 EasyFlash loader with usage examples, demonstrating a rather useful scenario involving:
 - IRQ-driven tune playback while loading, and 
-- moving data under I/O while handling IRQ requests.
+- moving data under ROM and I/O while handling IRQ requests.
 
 ## Notes
 - Assemble source files with [ACME cross-assembler](https://sourceforge.net/projects/acme-crossass/). Version 0.96.4 has been successfully tested.
@@ -9,10 +9,10 @@ EasyFlash loader with usage examples, demonstrating a rather useful scenario inv
 
 ## CRT image
 To create the CRT image, the tool `bin2efcrt` is used. This is invoked with a relative path, `../tools`: simply build this tool first and then come back to this example.\
-To test the cartridge in a *recent* version of [VICE Emulator](http://vice-emu.sourceforge.net), run `x64 -cartcrt loader.crt` or attach it using "File => Attach cartridge image... => CRT Image...". You can also write it to your EasyFlash.
+To test the cartridge in a *recent* version of [VICE Emulator](http://vice-emu.sourceforge.net), run `x64 -cartcrt tst_loader.crt` or attach it using "File => Attach cartridge image... => CRT Image...". You can also write it to your EasyFlash.
 
-## Loading under I/O directly
-The "load_under_io" folder provides *replacement* files for loading directly under I/O, which is discouraged as it involves quite some overhead (to backup/restore $01 and the I flag).
+## Loading under ROM and I/O directly
+The "load_under_io" folder provides *replacement* files for loading directly under ROM and I/O, which is discouraged as it involves quite some overhead (to backup/restore $01 and the I flag).
 
 ## Productions that use this loader
 This loader was used to put together my [EasyFlash version of Last Ninja 2](https://csdb.dk/release/?id=167043).
