@@ -1,6 +1,5 @@
         ; copy the kick-off code to RAM - we don't run it here
-        ; since the banking would make it invisible and it uses
-        ; self-modifying code in the trainer menu
+        ; since the banking would make it invisible
 
         ldx #$00
 -       lda crtKickOff,x
