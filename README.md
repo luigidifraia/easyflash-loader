@@ -6,6 +6,7 @@ EasyFlash loader with usage examples, demonstrating a rather useful scenario inv
 ## Notes
 - Assemble source files with [ACME cross-assembler](https://sourceforge.net/projects/acme-crossass/). Version 0.96.4 has been successfully tested.
 - To use the provided `Makefile` you need GNU `make`.
+- Under Windows you might want to use [MSYS2](https://www.msys2.org/).
 
 ## CRT image
 To create the CRT image, the tool `bin2efcrt` is used. This is invoked with a relative path, `../tools`: simply build this tool first and then come back to this example.\

@@ -1,0 +1,14 @@
+# Assembled files
+*.prg
+*.ct
+
+# Binary files
+*.bin
+iffldata
+loader_and_data
+
+# Intermediate files
+iffltable.s
+
+# Cartridge files
+*.crt

@@ -1,7 +1,9 @@
+export PATH := ../win32:$(PATH)
+
 all: tst_loader.crt
 
 tst_loader.crt: loader_and_data
-	../tools/bin2efcrt $< $@
+	bin2efcrt $< $@
 
 loader_and_data: loader.bin iffldata
 	cat $^ > $@
