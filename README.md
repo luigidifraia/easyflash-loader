@@ -4,9 +4,9 @@ EasyFlash loader with usage examples, demonstrating a rather useful scenario inv
 - moving data under ROM and I/O while handling IRQ requests.
 
 ## Notes
-- Assemble source files with [ACME cross-assembler](https://sourceforge.net/projects/acme-crossass/). Version 0.96.4 has been successfully tested.
-- To use the provided `Makefile` you need GNU `make`.
-- Under Windows you might want to use [MSYS2](https://www.msys2.org/).
+- Assemble source files with [ACME cross-assembler](https://sourceforge.net/projects/acme-crossass/). Version 0.96.4 has been successfully tested. A Windows executable is provided for user convenience.
+- To use the provided `Makefile` you need GNU `make`. A Windows executable is provided for user convenience.
+- Under Windows you might want to use [MSYS2](https://www.msys2.org/) or [Git Bash](https://git-scm.com/downloads).
 
 ## CRT image
 To create the CRT image, the tool `bin2efcrt` is used. This is invoked with a relative path, `../tools`: simply build this tool first and then come back to this example.\
