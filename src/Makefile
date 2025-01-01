@@ -8,7 +8,7 @@ tst_loader.crt: loader_and_data
 loader_and_data: loader.bin iffldata
 	cat $^ > $@
 
-loader.bin: loader.s asc2ulpet.ct iffltable.s
+loader.bin: loader.s config.s main.s asc2ulpet.ct iffltable.s
 	acme -o $@ $<
 
 asc2ulpet.ct: asc2ulpet.s
